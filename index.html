@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script defer src="time.js"></script>
-    <title>Wisielec</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odliczanie do matury 2022</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div id="container">
-        <div id="clock"></div>
-        <header>
-            <p id="word"></p>
-        </header>
-        <section id="lifes"></section>
-        <section id="keyboard"></section>
+        <h1>Do matury 2022r. zostało:</h1>
+        <section class="numbers">
+            <div class="block">
+                <h3 class="days"></h3>
+                <p>Dni</p>
+            </div class="block">
+            <div class="block">
+                <h3 class="hours"></h3>
+                <p>Godzin</p>
+            </div class="block">
+            <div class="block">
+                <h3 class="minutes"></h3>
+                <p>Minut</p>
+            </div class="block">
+            <div class="block">
+                <h3 class="seconds"></h3>
+                <p>Sekund</p>
+            </div class="block">
+        </section>
     </div>
 </body>
+
 </html>
