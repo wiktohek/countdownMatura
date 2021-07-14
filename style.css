@@ -1,46 +1,79 @@
-body *{
+body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    background-color: gray;
+    color:white;
+    font-family: 'Encode Sans SC', sans-serif
 }
-body{
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;
+#container{
+    display:flex;
+    flex-direction: column;
+}
+header{
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
+    background-color:yellow;
+    font-size:100px;
+    color:black;
+    text-align: center;
+    height: 30vh;
+}
+#lifes{
+    width:1000px;
+    height:230px;
+    background-color:white;
+    margin:auto;
+}
+#keyboard{
+    margin:auto;
+    width:1000px;
+    text-align: center;
+    height: 45vh;
+    background-color:lightgray;
+    font-size:40px;
+    color:black;
+}
+#letters{
+    margin: auto;
+    width:85%;
+}
+.litera{
+    margin-left:auto;
+    margin-right:auto;
+    background-color: gray;
+    color:white;
+    width:30px;
+    height: 30px;
+    margin:10px;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid black;
+    float:left;
+    border-radius: .5em;
+}
+.litera:hover{
+    border: 3px solid white;
+    cursor:pointer;
+}
+img{
+    width:1000px;
+    height: 25vh;
 }
 
-#container{
-    position: relative;
-    top:35vh;
-    left: 7rem;
+span{
+    cursor:pointer;
+    margin:2em;
 }
-h1{
-    text-align: center;
-    margin-bottom: 30px;
-    font-size:60px;
+.yes:hover{
+    color:green;
 }
-section{
-    margin:auto;
-    display: flex;
-    justify-content: space-around;
-    width:50%;
+.not:hover{
+    color:red;
 }
-.numbers{
-    font-size:40px;
+#clock{
+    position: absolute;
+    font-size:32px;
 }
-.words{
-    display:flex;
-    margin: auto;
-    font-size:20px;
-}
-h3{
-    font-size:50px;
-}
-p{
-    font-size:40px; 
-}
-h3, p{
-    width:25%;
-    text-align: center;
-}
+
